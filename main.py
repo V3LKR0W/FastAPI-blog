@@ -1,6 +1,5 @@
 from fastapi import FastAPI, Depends, status, Response, HTTPException
 from sqlalchemy.orm.session import Session
-from starlette.status import HTTP_200_OK
 from . import schemas, models
 from .database import engine, SessionLocal
 from sqlalchemy.orm import Session
